@@ -3,8 +3,8 @@ import { EventEmitter } from '@angular/core';
 
 export class ShoppingService{
 
- ingridientChanged = new EventEmitter<Ingredients[]>();   
- private   indigrients: Ingredients[] =  [ new Ingredients( "Apple", 1, 2) ,new Ingredients( "Bannana" , 2,3) ];   
+ ingridientChanged = new EventEmitter<Ingredients[]>();
+ private   indigrients: Ingredients[] =  [ new Ingredients( 'Apple', 1, 2) ,new Ingredients( 'Bannana' , 2, 3) ];
 
  getIngridients()
  {
