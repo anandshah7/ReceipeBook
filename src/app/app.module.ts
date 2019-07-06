@@ -10,7 +10,7 @@ import { ReceipeDetailComponent } from './receipe/receipe-detail/receipe-detail.
 import { ShoppingComponent } from './shopping/shopping.component';
 import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping/shopping-list/shopping-edit/shopping-edit.component';
-
+import { ShoppingService} from './shopping/shopping.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,7 @@ import { ShoppingEditComponent } from './shopping/shopping-list/shopping-edit/sh
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

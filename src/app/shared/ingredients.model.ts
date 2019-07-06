@@ -1,4 +1,5 @@
 export class Ingredients {
 
-    constructor(public name:string,public quantity:number){}
-} 
+    constructor( public Name: string , public Id: number , public Quantity: number) { }
+
+}

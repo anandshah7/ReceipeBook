@@ -1,6 +1,6 @@
 <div class="container">
   <div class="col-md-5">
-    <app-receipe-list (ReceipeWasSelected) ="selectedReceipe = $event"></app-receipe-list>
+    <app-receipe-list></app-receipe-list>
   </div>
   <div class=col-md-7>
     <app-receipe-detail *ngIf = "selectedReceipe else noContent" [receipe]= "selectedReceipe"></app-receipe-detail>
