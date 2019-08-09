@@ -11,7 +11,7 @@ export class ShoppingService{
     return this.indigrients.slice();
  }
 
- addingridient(ingridient:Ingredients)
+ addingridient(ingridient: Ingredients)
  {
      this.indigrients.push(ingridient);
      this.ingridientChanged.emit(this.indigrients.slice());

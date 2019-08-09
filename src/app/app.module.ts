@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.co
 import { ShoppingEditComponent } from './shopping/shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingService} from './shopping/shopping.service';
 import { DropDownDirective } from './shared/dropown.directive';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { DropDownDirective } from './shared/dropown.directive';
     DropDownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [ShoppingService],
   bootstrap: [AppComponent]
