@@ -9,14 +9,12 @@ import { ReceipeService } from '../../receipe.service';
 })
 export class ReceipeItemComponent implements OnInit {
  @Input() receipe: Receipe;
- 
-  constructor(private receipeService:ReceipeService) { }
+  constructor(private receipeService: ReceipeService) { }
 
   ngOnInit() {
   }
   onSelected() {
     this.receipeService.receipeSelected.emit(this.receipe);
-   
   }
 
 }
